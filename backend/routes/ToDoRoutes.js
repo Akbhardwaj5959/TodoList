@@ -7,7 +7,9 @@ const {
 } = require("../controller/ToDoController");
 
 const router = Router();
-
+router.get("/", (req, res)=>{
+ res.send("working");
+})
 router.get("/get", getToDos);
 router.post("/save", saveToDo);
 
